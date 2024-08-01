@@ -13,7 +13,7 @@ public class PremiumCarsDriver extends Driver {
     }
 
     @Override
-    public boolean openAuto(int key) {
+    public boolean openVehicle(int key) {
         if (key == getKarKey()) {
             System.out.println("Саr opened");
             return true;
@@ -32,6 +32,7 @@ public class PremiumCarsDriver extends Driver {
         }
         return false;
     }
+
 }
 
 
