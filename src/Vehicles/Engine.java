@@ -2,6 +2,6 @@ package Vehicles;
 
 public class Engine {
     private float volume;
-    private Benzine benzine;
+    private FuelType fuelType;
     private String nameEngine;
 }

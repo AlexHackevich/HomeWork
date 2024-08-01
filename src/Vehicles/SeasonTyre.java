@@ -1,7 +1,5 @@
 package Vehicles;
 
-public class SeasonTyre {
-    public enum SeasonType{
-        WINTER, SUMMER, ALLSEASON
-    }
+public enum SeasonTyre {
+    WINTER, SUMMER, ALLSEASON
 }

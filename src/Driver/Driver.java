@@ -1,7 +1,8 @@
 package Driver;
 
+import Interfaces.Driveable;
+
 public abstract class Driver {
     private int drivingExpiriense;
-    private License[] license;
-    boolean Lock;
+    private DriveLicense license;
 }
