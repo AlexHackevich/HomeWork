@@ -1,5 +1,5 @@
 package Interfaces;
 
-public class Openable {
-
+public interface Openable {
+    public boolean openAuto(int key);
 }
