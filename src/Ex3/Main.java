@@ -14,14 +14,17 @@ public class Main {
         myArrayList.add("DAS");
         myArrayList.add("DAS");
 
-        myArrayList.remove(1);
+        //myArrayList.remove(1);
 
         Object[] objects = new Object[]{"Ivan", "Sergey", "Petr"};
         myArrayList.addElements(objects);
 
         myArrayList.addOfIndex(1, "hexz");
+        myArrayList.addOfIndex(1, "hexz");
+        myArrayList.addOfIndex(1, "hexz");
+        myArrayList.addOfIndex(1, "hexz");
 
-        myArrayList.clear();
+        //myArrayList.clear();
         for (int i = 0; i < myArrayList.size(); i++) {
             System.out.println(myArrayList.get(i) + " " + i);
         }

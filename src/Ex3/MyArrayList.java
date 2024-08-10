@@ -31,6 +31,9 @@ public class MyArrayList {
 
     public void addOfIndex(int index, Object o) {
         for (int i = size; i > index; i--) {
+            if (size == elements.length) {
+                ensureCapasity();
+            }
             elements[i] = elements[i - 1];
         }
         elements[index] = o;
