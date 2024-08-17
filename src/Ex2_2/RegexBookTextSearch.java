@@ -5,7 +5,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RegexBookTextSearch implements Findable {
-    int count1=0;
+    private int count1;
     @Override
     public int countWord(String word, String text) {
         Pattern pattern = Pattern.compile(word);
@@ -14,6 +14,6 @@ public class RegexBookTextSearch implements Findable {
             count1++;
         }
         System.out.println(count1);
-        return 0;
+        return count1;
     }
 }
