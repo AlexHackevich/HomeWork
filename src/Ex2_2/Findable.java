@@ -1,5 +1,5 @@
 package Ex2_2;
 
 public interface Findable {
-    int countWord(String word, String text);
+    void countWord(String word, String text);
 }
