@@ -7,11 +7,11 @@ public class Program {
     public static void main(String[] args) {
         String str1 = "Мой номер телефона +375-29-1234567. Мой ник в телеграмм @TheGodFather.";
 
-        String phoneRegex = "(?:\\+375[- ]?(?:25|44)[- ]?)?(\\d{7})";
+        String phoneRegex = "\\+375-(29|44|25)-(\\d{7})";;
         Pattern phonePattern = Pattern.compile(phoneRegex);
         Matcher phoneMatcher = phonePattern.matcher(str1);
         while (phoneMatcher.find())
-            System.out.println(phoneMatcher.group());
+            System.out.println(phoneMatcher.group(2));
 
         String telegramRegex = "(?<=@)\\w+";
         Pattern telegramPattern = Pattern.compile(telegramRegex);
