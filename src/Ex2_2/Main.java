@@ -21,10 +21,9 @@ public class Main {
         String word = in.nextLine();
 
         Findable simple = new SimpleBookTextSearch();
-        simple.countWord(word, text);
+        System.out.println(simple.countWord(word,text));
 
         Findable regex = new RegexBookTextSearch();
-        regex.countWord(word, text);
-
+        System.out.println(regex.countWord(word, text));
     }
 }

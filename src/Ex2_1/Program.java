@@ -18,6 +18,5 @@ public class Program {
         Matcher telegramMatcher = telegramPattern.matcher(str1);
         while (telegramMatcher.find())
             System.out.println(telegramMatcher.group());
-
     }
 }
