@@ -27,5 +27,6 @@ public class Main {
         Findable regex = new RegexBookTextSearch();
         int resultRegexSearch = regex.countWord(word, text);
         System.out.println(resultRegexSearch);
+
     }
 }
