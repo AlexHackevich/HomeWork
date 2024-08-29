@@ -54,7 +54,7 @@ public class MyArrayList {
         size = 0;
     }
 
-    public void ensureCapasity() {
+    private void ensureCapasity() {
         Object[] newArray = new Object[elements.length * 2];
         for (int i = 0; i < elements.length; i++) {
             newArray[i] = elements[i];
